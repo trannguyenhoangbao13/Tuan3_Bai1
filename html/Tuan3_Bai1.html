@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset CSS */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to bottom, #8fd0f2, #91c9ed);
+        color: #333;
+        line-height: 1.6;
+    }
+    /* Header */
+    
+    header {
+        text-align: center;
+        padding: 10px;
+        position: relative;
+    }
+    
+    nav {
+        background: #6ba5d7;
+        padding: 10px 0;
+        text-align: center;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 0;
+        right: 10%;
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 2px 2px 5px #555;
+    }
+    /* Container Layout */
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    /* Registration Section */
+    
+    .registration {
+        width: 60%;
+        background-color: #e0f2ff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .registration h2 {
+        font-size: 24px;
+        color: #004080;
+        margin-bottom: 10px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form label {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+    
+    form input,
+    form select,
+    form textarea {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    
+    form button {
+        width: 100px;
+        padding: 8px;
+        margin: 5px;
+        border: none;
+        background-color: #6ba5d7;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background-color: #468bb2;
+    }
+    /* Image Section */
+    
+    .image {
+        width: 35%;
+        text-align: center;
+    }
+    
+    .image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .highlight-text {
+        font-size: 24px;
+        color: #004080;
+        font-weight: bold;
+        margin-top: 10px;
+        text-shadow: 2px 2px 4px #ccc;
+    }
+    /* Footer */
+    
+    footer {
+        background-color: #6ba5d7;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+        font-size: 14px;
+    }
+    
+    footer em {
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <!-- Header với Menu -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Services</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <h1 class="logo">Sky World</h1>
+    </header>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <section class="registration">
+            <h2>Registration information</h2>
+            <p>
+                Start your travel planning right now with our online tour registration form. Just tell us a little about yourself and your group and one of our travel experts will contact you to create the perfect tour package custom built for your group’s needs.
+            </p>
+            <form>
+                <label for="title">Title</label>
+                <select id="title" name="title">
+                    <option>Mr.</option>
+                    <option>Mrs.</option>
+                    <option>Ms.</option>
+                </select>
+
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" placeholder="First Name">
+
+                <label for="address">Mailing Address</label>
+                <input type="text" id="address" placeholder="Mailing Address">
+
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="City">
+
+                <label for="country">Country</label>
+                <input type="text" id="country" placeholder="Country">
+
+                <label for="questions">Specific questions or requests about your tour</label>
+                <textarea id="questions" rows="5" placeholder="Specific questions or requests about your tour"></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <!-- Ảnh bên phải -->
+        <section class="image">
+            <img src="../img/sky.png" alt="Cloudy Sky">
+            <h2 class="highlight-text">You’ve arrived.</h2>
+            <p>Journeys as great as the destinations.</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2016 Sky World Tours. All rights reserved.</p>
+        <p>Contact information: <em>Student Name</em> | <em>Student ID</em> | Testing date: <em>16 Sept 2016</em></p>
+    </footer>
+</body>
+
+</html>
